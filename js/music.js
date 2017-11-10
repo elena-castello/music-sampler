@@ -5,10 +5,10 @@ $(document).ready(function() {
 
   // function to hide all divs
   function hideAll() {
-    $('#sigo_audio').hide();
-    $('#migente_audio').hide();
-    $('#safari_audio').hide();
-    $('#ginza_audio').hide();
+    $('#SigoName').hide();
+    $('#MiGenteName').hide();
+    $('#SafariName').hide();
+    $('#GinzaName').hide();
   }
 
   // run that function right away
@@ -16,30 +16,39 @@ $(document).ready(function() {
 
   // when any animal is clicked, make the suitable div appear
   $('.cover').click(function() {
-
-    // but first, hide all the divs to ensure that
-    // only one will be open, ever
     hideAll();
 
     // here is a switch statement - this was in Codecademy
     // "Control Flow" lesson 7
 
+
+  $("button").click(function() {
+    $('#Jfact').slideToggle();
+});
+
     // we can get the ID of the thing that was clicked -
     switch ($(this).attr("id")) {
       case "sigo":
-        $('#sigo_audio').show();
+        $('#SigoName').show();
         break;
       case "migente":
-        $('#migente_audio').show();
+        $('#MiGenteName').show();
         break;
       case "safari":
-        $('#safari_audio').show();
+        $('#SafariName').show();
         break;
       case "ginza":
-        $('#ginza_audio').show();
+        $('#GinzaName').show();
         break;
     }
+
+    $("audio").each(function() {
+    this.pause();
+    this.currentTime = 0;
+});
+
   }); // end of function for clicking
+
 
 
 });
