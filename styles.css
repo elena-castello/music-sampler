@@ -1,0 +1,45 @@
+article {
+  color: #000;
+  margin: auto;
+}
+body {
+  background: #e0362a;
+  padding-left: 30px;
+}
+h1 {
+  text-align: center;
+  color: #3a3c42;
+  font-family: 'Passion One', cursive;
+  font-size: 200%;
+}
+
+h2, footer {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+font-family: 'Libre Franklin', sans-serif;
+margin-bottom: 50px;
+margin-left: 50px;
+margin-right: 50px;
+}
+
+footer {
+  text-align: center;
+  margin: 15px;
+  color:#3a3c42;
+}
+
+#images {
+  padding: 30px;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
